@@ -25,9 +25,4 @@ public class Goal {
         return solutions;
     }
 
-
-    @Override
-    public String toString() {
-        return "Goal: "+maxWeight+", PS:"+posibleSolutions+", S:"+solutions;
-    }
 }

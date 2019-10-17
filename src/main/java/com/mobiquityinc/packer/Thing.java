@@ -25,9 +25,4 @@ public class Thing {
         return cost;
     }
 
-
-    @Override
-    public String toString() {
-        return "Thing: "+index+", "+weight+" "+cost;
-    }
 }

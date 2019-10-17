@@ -58,12 +58,12 @@ public class PackerTest {
         try {
             Packer.pack(getFileFromResources("fileDemoConstraints5.txt"));
         } catch (APIException e) {
-            Assert.assertTrue(e.getMessage().contains("Max Weight of an item can not be lower than 100!"));
+            Assert.assertTrue(e.getMessage().contains("Max Weight of an item can not be lower than 0!"));
         }
         try {
             Packer.pack(getFileFromResources("fileDemoConstraints6.txt"));
         } catch (APIException e) {
-            Assert.assertTrue(e.getMessage().contains("Max Cost of an item can not be lower than 100!"));
+            Assert.assertTrue(e.getMessage().contains("Max Cost of an item can not be lower than 0!"));
         }
 
     }

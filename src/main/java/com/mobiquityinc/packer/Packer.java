@@ -27,7 +27,6 @@ public class Packer {
   private static String evaluateGoals(List<Goal> goals) {
     String response="";
     for (Goal goal:goals){
-      System.out.println(goal);
       response+=checkGoal(goal)+ PROPERTY_LINE_SEPARATOR;
     }
     return response;
@@ -113,10 +112,10 @@ public class Packer {
       }
 
       if( g.getPosibleSolutions().stream().filter(x -> x.getWeight() < 0f).count()>0){
-        throw new APIException("Max Weight of an item can not be lower than 100!");
+        throw new APIException("Max Weight of an item can not be lower than 0!");
       }
       if( g.getPosibleSolutions().stream().filter(x -> x.getCost() < 0f).count()>0){
-        throw new APIException("Max Cost of an item can not be lower than 100!");
+        throw new APIException("Max Cost of an item can not be lower than 0!");
       }
 
     }
