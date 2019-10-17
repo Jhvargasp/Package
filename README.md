@@ -19,7 +19,9 @@ The current implementation validates, packager/items with max weight of 100, ite
 
 The implementation do not validate the line/file format.  It can be an upgrade in future sprints
 
-
+Coverage report:
+Lines: 95%
+Methods: 95%
 
 
 #### Running Tests and Server Locally 
