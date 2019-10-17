@@ -20,17 +20,11 @@ public class Goal {
         return posibleSolutions;
     }
 
-    public void setPosibleSolutions(List<Thing> posibleSolutions) {
-        this.posibleSolutions = posibleSolutions;
-    }
 
     public List<Thing> getSolutions() {
         return solutions;
     }
 
-    public void setSolutions(List<Thing> solutions) {
-        this.solutions = solutions;
-    }
 
     @Override
     public String toString() {

@@ -75,7 +75,7 @@ public class Packer {
 
   private static List<Goal> readFile(String fileName) throws APIException {
     if(!Files.exists(Paths.get(fileName))){
-      throw  new APIException("File not found: "+fileName);
+      throw  new APIException("File not found: "+fileName,new Exception());
     }
     //read file into stream, try-with-resources
     List<Goal> goals=new ArrayList<>();
